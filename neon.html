@@ -1,22 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zeno | Digital Explorer</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#120022"/>
+  <title>Zeno — Digital Explorer & Computer Science Student</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <!-- External CSS -->
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Social preview -->
+  <meta name="description" content="Zeno — Computer Science student & physics explorer. Building elegant code, thinking in systems, creating future-ready projects." />
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <h1 class="logo">⚡ Zeno</h1>
-    <ul>
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main Navigation">
+    <div class="nav__brand" aria-hidden="true">
+      <span class="nav__logo">⚡</span>
+      <span class="nav__name">Zeno</span>
+    </div>
+
+    <button id="navToggle" class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
+
+    <ul class="nav__links" id="navLinks">
       <li><a href="#about">About</a></li>
       <li><a href="#subjects">Subjects</a></li>
       <li><a href="#hobbies">Hobbies</a></li>
@@ -25,109 +37,156 @@
     </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="hero" id="about">
-    <div class="hero-content">
-      <h1>Hello, I'm <span>Zeno</span></h1>
-      <p class="tagline">A visionary student driven by curiosity, powered by science, and inspired by the future 🚀</p>
-      <p class="description">
-        I’m a passionate <strong>Computer Science</strong> student with a deep love for <strong>physics</strong> and the endless possibilities of the digital universe.  
-        I explore ideas that merge technology and creativity — from coding intelligent systems, to understanding the laws of nature, to imagining a better tomorrow.  
-        My journey is fueled by curiosity, discipline, and a vision to leave an impact in the evolving world of innovation. ✨
-      </p>
-      <a href="#contact" class="btn">Let’s Connect</a>
-    </div>
-  </header>
+  <!-- HERO -->
+  <header class="hero" id="about" role="banner">
+    <div class="hero__inner">
+      <div class="hero__left">
+        <h1 class="hero__title">Hello — I'm <span class="accent">Zeno</span></h1>
+        <p class="hero__lead">Curious. Disciplined. Future-driven.</p>
 
-  <!-- Subjects -->
-  <section class="card" id="subjects">
-    <h2>📚 Favorite Subjects</h2>
-    <ol>
-      <li>Computer Science</li>
-      <li>Physics</li>
-      <li>General Science</li>
-    </ol>
-  </section>
+        <p class="hero__description">
+          I'm a Computer Science student with a deep love for physics and systems thinking. I build thoughtful software, learn fast, and turn complex ideas into simple, elegant solutions.
+          I aim to ship work that matters — practical, beautiful, and designed to scale.
+        </p>
 
-  <!-- Hobbies -->
-  <section class="card" id="hobbies">
-    <h2>🎵 My Hobbies</h2>
-    <ul>
-      <li>Coding futuristic projects</li>
-      <li>Reading & researching new concepts</li>
-      <li>Chilling with synthwave music 🌌</li>
-    </ul>
-  </section>
-
-  <!-- Courses -->
-  <section class="card" id="courses">
-    <h2>🎓 My Courses</h2>
-    <table>
-      <tr>
-        <th>Course Name</th>
-        <th>Lecturer</th>
-        <th>Day</th>
-      </tr>
-      <tr>
-        <td>COM 112 - Programming</td>
-        <td>Dr. Orlando</td>
-        <td>Monday</td>
-      </tr>
-      <tr>
-        <td>MAT 115 - Calculus</td>
-        <td>Prof. Erico</td>
-        <td>Wednesday</td>
-      </tr>
-      <tr>
-        <td>PHY 115 - Mechanics</td>
-        <td>Dr. Kennedy</td>
-        <td>Friday</td>
-      </tr>
-    </table>
-  </section>
-
-  <!-- Contact -->
-  <section class="card" id="contact">
-    <h2>📩 Contact Me</h2>
-    <form action="#" method="post">
-      <div class="form-group">
-        <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" required>
-      </div>
-
-      <div class="form-group">
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
-      </div>
-
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-
-      <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-      </div>
-
-      <div class="form-group">
-        <label>Gender:</label>
-        <div class="radio-group">
-          <input type="radio" id="male" name="gender" value="male">
-          <label for="male">Male</label>
-          <input type="radio" id="female" name="gender" value="female">
-          <label for="female">Female</label>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#contact">Get in touch</a>
+          <a class="btn btn--ghost" href="#courses">View courses</a>
         </div>
       </div>
 
-      <button type="submit" class="btn">Submit</button>
-    </form>
-  </section>
+      <aside class="hero__card" aria-label="Profile">
+        <!-- Put your avatar as avatar.jpg in the same folder, or the placeholder will display -->
+        <img class="avatar" src="avatar.jpg" alt="Portrait of Zeno (avatar)" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27200%27 height=%27200%27><rect width=%27200%27 height=%27200%27 fill=%27%23140b2a%27/><text x=%2750%25%27 y=%2755%25%27 fill=%27%23ff48b9%27 font-family=%27Orbitron%27 font-size=%2730%27 text-anchor=%27middle%27>Z</text></svg>';">
+        <div class="hero__meta">
+          <h3>Zeno</h3>
+          <p class="muted">BSc Computer Science • Year 1</p>
+          <p class="muted">Aspires to financial freedom & real-world impact</p>
+          <div class="socials">
+            <a href="#" aria-label="GitHub" title="GitHub">GH</a>
+            <a href="#" aria-label="LinkedIn" title="LinkedIn">in</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Zeno — Designed with 💜 Cosmic Neon Energy</p>
+  <!-- CONTENT SECTIONS -->
+  <main id="main">
+
+    <section class="panel" id="subjects" aria-labelledby="subjects-heading">
+      <div class="container">
+        <h2 id="subjects-heading">Favorite Subjects</h2>
+        <p class="muted">The foundations that shape how I think.</p>
+
+        <div class="grid grid-3">
+          <article class="tile">
+            <h3>Computer Science</h3>
+            <p>Algorithms, systems design, and software craft — building tools that scale and delight.</p>
+          </article>
+
+          <article class="tile">
+            <h3>Physics</h3>
+            <p>Understanding the laws that govern reality — helps me model and reason about complex systems.</p>
+          </article>
+
+          <article class="tile">
+            <h3>Mathematics</h3>
+            <p>Precision, proofs and mental clarity. The backbone of good engineering and critical thinking.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="hobbies" aria-labelledby="hobbies-heading">
+      <div class="container">
+        <h2 id="hobbies-heading">Hobbies & Practice</h2>
+        <p class="muted">How I spend the hours between learning and building.</p>
+
+        <ul class="hobby-list">
+          <li><strong>Coding</strong> — small projects, automation, and experimenting with web tools.</li>
+          <li><strong>Reading</strong> — CS papers, physics texts, and practical self-improvement.</li>
+          <li><strong>Music & Chill</strong> — synthwave playlists while thinking or debugging.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel" id="courses" aria-labelledby="courses-heading">
+      <div class="container">
+        <h2 id="courses-heading">Current Courses</h2>
+        <div class="table-wrap">
+          <table class="courses">
+            <thead>
+              <tr>
+                <th>Course</th>
+                <th>Lecturer</th>
+                <th>Day</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>COM 112 — Programming</td>
+                <td>Dr. Orlando</td>
+                <td>Monday</td>
+              </tr>
+              <tr>
+                <td>MAT 115 — Calculus</td>
+                <td>Prof. Erico</td>
+                <td>Wednesday</td>
+              </tr>
+              <tr>
+                <td>PHY 115 — Mechanics</td>
+                <td>Dr. Kennedy</td>
+                <td>Friday</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Contact</h2>
+        <p class="muted">Want to collaborate, ask a question, or say hi? Send a short message.</p>
+
+        <form id="contactForm" class="form" action="#" method="post" novalidate>
+          <div class="form-row">
+            <label for="fullname">Full name</label>
+            <input id="fullname" name="fullname" type="text" required minlength="2" placeholder="Zeno Mwenda">
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com">
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="A short note..."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn--primary">Send message</button>
+            <button type="reset" class="btn btn--ghost">Reset</button>
+          </div>
+
+          <div id="formStatus" role="status" aria-live="polite" class="form-status"></div>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 Zeno — Built with focus, curiosity, and neon energy.</small>
+    </div>
   </footer>
 
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
