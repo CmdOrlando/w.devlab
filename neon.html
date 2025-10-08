@@ -1,192 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#120022"/>
-  <title>Zeno — Digital Explorer & Computer Science Student</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Zeno | Professional Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-  <!-- Social preview -->
-  <meta name="description" content="Zeno — Computer Science student & physics explorer. Building elegant code, thinking in systems, creating future-ready projects." />
 </head>
 <body>
+  <div class="container">
 
-  <!-- NAV -->
-  <nav class="nav" role="navigation" aria-label="Main Navigation">
-    <div class="nav__brand" aria-hidden="true">
-      <span class="nav__logo">⚡</span>
-      <span class="nav__name">Zeno</span>
-    </div>
+    <!-- Header -->
+    <header class="profile-header">
+      <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
+      <div class="header-text">
+        <h1>Hi, I'm Zeno</h1>
+        <p>Aspiring computer scientist & lifelong learner. Passionate about coding, technology, and exploring the future of innovation.</p>
+      </div>
+    </header>
 
-    <button id="navToggle" class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span class="hamburger"></span>
-    </button>
+    <!-- About Me -->
+    <section class="about-me">
+      <h2 class="section-title">About Me</h2>
+      <p>I am a first-year Computer Science student dedicated to mastering programming, software development, and AI technologies. I aim to combine creativity with technical expertise to solve real-world problems.</p>
+    </section>
 
-    <ul class="nav__links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#subjects">Subjects</a></li>
-      <li><a href="#hobbies">Hobbies</a></li>
-      <li><a href="#courses">Courses</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-  <header class="hero" id="about" role="banner">
-    <div class="hero__inner">
-      <div class="hero__left">
-        <h1 class="hero__title">Hello — I'm <span class="accent">Zeno</span></h1>
-        <p class="hero__lead">Curious. Disciplined. Future-driven.</p>
-
-        <p class="hero__description">
-          I'm a Computer Science student with a deep love for physics and systems thinking. I build thoughtful software, learn fast, and turn complex ideas into simple, elegant solutions.
-          I aim to ship work that matters — practical, beautiful, and designed to scale.
-        </p>
-
-        <div class="hero__cta">
-          <a class="btn btn--primary" href="#contact">Get in touch</a>
-          <a class="btn btn--ghost" href="#courses">View courses</a>
+    <!-- Skills -->
+    <section class="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skill">
+        <span>HTML & CSS</span>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:90%;"></div>
         </div>
       </div>
-
-      <aside class="hero__card" aria-label="Profile">
-        <!-- Put your avatar as avatar.jpg in the same folder, or the placeholder will display -->
-        <img class="avatar" src="avatar.jpg" alt="Portrait of Zeno (avatar)" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27200%27 height=%27200%27><rect width=%27200%27 height=%27200%27 fill=%27%23140b2a%27/><text x=%2750%25%27 y=%2755%25%27 fill=%27%23ff48b9%27 font-family=%27Orbitron%27 font-size=%2730%27 text-anchor=%27middle%27>Z</text></svg>';">
-        <div class="hero__meta">
-          <h3>Zeno</h3>
-          <p class="muted">BSc Computer Science • Year 1</p>
-          <p class="muted">Aspires to financial freedom & real-world impact</p>
-          <div class="socials">
-            <a href="#" aria-label="GitHub" title="GitHub">GH</a>
-            <a href="#" aria-label="LinkedIn" title="LinkedIn">in</a>
-          </div>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:80%;"></div>
         </div>
-      </aside>
-    </div>
-  </header>
-
-  <!-- CONTENT SECTIONS -->
-  <main id="main">
-
-    <section class="panel" id="subjects" aria-labelledby="subjects-heading">
-      <div class="container">
-        <h2 id="subjects-heading">Favorite Subjects</h2>
-        <p class="muted">The foundations that shape how I think.</p>
-
-        <div class="grid grid-3">
-          <article class="tile">
-            <h3>Computer Science</h3>
-            <p>Algorithms, systems design, and software craft — building tools that scale and delight.</p>
-          </article>
-
-          <article class="tile">
-            <h3>Physics</h3>
-            <p>Understanding the laws that govern reality — helps me model and reason about complex systems.</p>
-          </article>
-
-          <article class="tile">
-            <h3>Mathematics</h3>
-            <p>Precision, proofs and mental clarity. The backbone of good engineering and critical thinking.</p>
-          </article>
+      </div>
+      <div class="skill">
+        <span>Python</span>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width:85%;"></div>
         </div>
       </div>
     </section>
 
-    <section class="panel" id="hobbies" aria-labelledby="hobbies-heading">
-      <div class="container">
-        <h2 id="hobbies-heading">Hobbies & Practice</h2>
-        <p class="muted">How I spend the hours between learning and building.</p>
+    <!-- Education -->
+    <section class="education">
+      <h2 class="section-title">Education</h2>
+      <ul class="timeline">
+        <li>
+          <h3>BSc Computer Science</h3>
+          <p>University Name, 2025-Present</p>
+        </li>
+        <li>
+          <h3>High School Diploma</h3>
+          <p>School Name, 2021-2024</p>
+        </li>
+      </ul>
+    </section>
 
-        <ul class="hobby-list">
-          <li><strong>Coding</strong> — small projects, automation, and experimenting with web tools.</li>
-          <li><strong>Reading</strong> — CS papers, physics texts, and practical self-improvement.</li>
-          <li><strong>Music & Chill</strong> — synthwave playlists while thinking or debugging.</li>
-        </ul>
+    <!-- Courses Table -->
+    <section class="courses">
+      <h2 class="section-title">Courses</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Course Name</th>
+            <th>Lecture</th>
+            <th>Day</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>COM 112</td>
+            <td>Dr. Orlando</td>
+            <td>Monday</td>
+          </tr>
+          <tr>
+            <td>MAT 115</td>
+            <td>Prof. Erico</td>
+            <td>Wednesday</td>
+          </tr>
+          <tr>
+            <td>PHY 115</td>
+            <td>Dr. Kennedy</td>
+            <td>Friday</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects">
+      <h2 class="section-title">Projects</h2>
+      <ul class="projects-list">
+        <li>
+          <h3>Portfolio Website</h3>
+          <p>Designed and developed a responsive personal portfolio website using HTML, CSS, and JS.</p>
+        </li>
+        <li>
+          <h3>AI Chatbot</h3>
+          <p>Built a simple AI chatbot using Python and NLP libraries to automate Q&A tasks.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <h2 class="section-title">Testimonials</h2>
+      <div class="testimonial">
+        <p>"Zeno is a highly motivated student with impressive programming skills. Always eager to learn and innovate." – Prof. Erico</p>
       </div>
     </section>
 
-    <section class="panel" id="courses" aria-labelledby="courses-heading">
-      <div class="container">
-        <h2 id="courses-heading">Current Courses</h2>
-        <div class="table-wrap">
-          <table class="courses">
-            <thead>
-              <tr>
-                <th>Course</th>
-                <th>Lecturer</th>
-                <th>Day</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>COM 112 — Programming</td>
-                <td>Dr. Orlando</td>
-                <td>Monday</td>
-              </tr>
-              <tr>
-                <td>MAT 115 — Calculus</td>
-                <td>Prof. Erico</td>
-                <td>Wednesday</td>
-              </tr>
-              <tr>
-                <td>PHY 115 — Mechanics</td>
-                <td>Dr. Kennedy</td>
-                <td>Friday</td>
-              </tr>
-            </tbody>
-          </table>
+    <!-- Contact Form -->
+    <section class="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <form id="contactForm" action="#" method="post">
+        <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="male" required> Male</label>
+          <label><input type="radio" name="gender" value="female" required> Female</label>
         </div>
-      </div>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formFeedback" class="feedback"></p>
     </section>
 
-    <section class="panel" id="contact" aria-labelledby="contact-heading">
-      <div class="container">
-        <h2 id="contact-heading">Contact</h2>
-        <p class="muted">Want to collaborate, ask a question, or say hi? Send a short message.</p>
-
-        <form id="contactForm" class="form" action="#" method="post" novalidate>
-          <div class="form-row">
-            <label for="fullname">Full name</label>
-            <input id="fullname" name="fullname" type="text" required minlength="2" placeholder="Zeno Mwenda">
-          </div>
-
-          <div class="form-row">
-            <label for="email">Email address</label>
-            <input id="email" name="email" type="email" required placeholder="you@example.com">
-          </div>
-
-          <div class="form-row">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required placeholder="A short note..."></textarea>
-          </div>
-
-          <div class="form-actions">
-            <button type="submit" class="btn btn--primary">Send message</button>
-            <button type="reset" class="btn btn--ghost">Reset</button>
-          </div>
-
-          <div id="formStatus" role="status" aria-live="polite" class="form-status"></div>
-        </form>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <small>© 2025 Zeno — Built with focus, curiosity, and neon energy.</small>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
