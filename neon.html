@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeno's Profile</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <h1 class="logo">⚡ Zeno</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#subjects">Subjects</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="about">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Zeno</span></h1>
+      <p>A computer science student, explorer of physics and the digital cosmos ✨</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </header>
+
+  <!-- Subjects -->
+  <section class="card" id="subjects">
+    <h2>📚 Favorite Subjects</h2>
+    <ol>
+      <li>Computer Science</li>
+      <li>General Science</li>
+      <li>Physics</li>
+    </ol>
+  </section>
+
+  <!-- Hobbies -->
+  <section class="card" id="hobbies">
+    <h2>🎵 My Hobbies</h2>
+    <ul>
+      <li>Coding futuristic projects</li>
+      <li>Reading & Researching</li>
+      <li>Chilling with synthwave music</li>
+    </ul>
+  </section>
+
+  <!-- Courses -->
+  <section class="card" id="courses">
+    <h2>🎓 My Courses</h2>
+    <table>
+      <tr>
+        <th>Course Name</th>
+        <th>Lecturer</th>
+        <th>Day</th>
+      </tr>
+      <tr>
+        <td>COM 112 - Programming</td>
+        <td>Dr. Orlando</td>
+        <td>Monday</td>
+      </tr>
+      <tr>
+        <td>MAT 115 - Calculus</td>
+        <td>Prof. Erico</td>
+        <td>Wednesday</td>
+      </tr>
+      <tr>
+        <td>PHY 115 - Mechanics</td>
+        <td>Dr. Kennedy</td>
+        <td>Friday</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Contact -->
+  <section class="card" id="contact">
+    <h2>📩 Contact Me</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Gender:</label>
+        <div class="radio-group">
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Zeno — Designed with 💜 Cosmic Neon Energy</p>
+  </footer>
+
+</body>
+</html>

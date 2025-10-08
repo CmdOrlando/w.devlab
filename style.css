@@ -1,0 +1,209 @@
+/* ===== Variables ===== */
+:root {
+  --bg-gradient: linear-gradient(135deg, #1a0033, #0f2027, #2c5364);
+  --neon-pink: #ff1dae;
+  --neon-cyan: #00eaff;
+  --neon-green: #39ff14;
+  --text-light: #f0f0f0;
+  --text-muted: #bbb;
+}
+
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-light);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(10, 10, 30, 0.85);
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  color: var(--neon-pink);
+  text-shadow: 0 0 8px var(--neon-pink), 0 0 15px var(--neon-cyan);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: var(--neon-cyan);
+  text-shadow: 0 0 8px var(--neon-cyan);
+}
+
+/* ===== Hero ===== */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  background: radial-gradient(circle at top, rgba(255,29,174,0.15), transparent 60%),
+              radial-gradient(circle at bottom, rgba(0,234,255,0.15), transparent 60%);
+}
+
+.hero h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: var(--neon-pink);
+  text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-cyan);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: var(--text-muted);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: var(--neon-cyan);
+  color: #111;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0 0 15px var(--neon-cyan), 0 0 30px var(--neon-green);
+  transition: transform 0.3s, background 0.3s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--neon-pink);
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--neon-pink), 0 0 40px var(--neon-cyan);
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 80px 20px;
+}
+
+.card {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  background: rgba(20, 20, 40, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 0 15px var(--neon-pink), 0 0 30px var(--neon-cyan);
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--neon-cyan);
+  text-shadow: 0 0 10px var(--neon-cyan);
+}
+
+ul, ol {
+  text-align: left;
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+/* ===== Table ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid var(--neon-cyan);
+}
+
+th {
+  background: var(--neon-pink);
+  color: white;
+}
+
+td {
+  background: rgba(255,255,255,0.05);
+}
+
+/* ===== Form ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  color: var(--neon-green);
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid var(--neon-pink);
+  background: black;
+  color: var(--text-light);
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 0 10px var(--neon-pink);
+}
+
+textarea {
+  resize: none;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+button {
+  align-self: flex-start;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(10, 10, 20, 0.9);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+
